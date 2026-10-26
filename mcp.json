@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "bch-algo-trading-bot-ai": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--release",
+        "--quiet"
+      ],
+      "env": {
+        "RUST_LOG": "info",
+        "HACKATHON_TRACK": "Bitcoin Cash",
+        "PROJECT_TICKER": "BCHBOT"
+      },
+      "tools": [
+        {
+          "name": "verify_bchbot_invariants",
+          "description": "Verifies deterministic invariants for BCH Algo Trading Bot AI on Bitcoin Cash."
+        },
+        {
+          "name": "execute_bchbot_action",
+          "description": "Executes authenticated Trading Bot state transition."
+        }
+      ]
+    }
+  }
+}
